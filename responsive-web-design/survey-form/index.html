@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TODO</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 id="title">Send your contact</h1>
+    <p id="description">Send us your contact info. We will spam you!!</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="John Doe"
+        required
+      />
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="johnDoe@example.com"
+        required
+      />
+      <label id="number-label" for="number">Number of spams per day</label>
+      <input
+        type="number"
+        name="spams"
+        id="number"
+        min="10"
+        max="20"
+        placeholder="#Spams/day"
+        required
+      />
+      <select id="dropdown" name="content" required>
+        <option disabled selected value>Spam content</option>
+        <option value="scams">Scams</option>
+        <option value="ads">Advertisement</option>
+        <option value="random">Random stuff</option>
+      </select>
+      <fieldset>
+        <legend>Can we share your e-mail?</legend>
+        <label>
+          <input
+            name="share-mail"
+            value="definitely"
+            type="radio"
+            checked
+          />Definitely</label
+        >
+        <label>
+          <input name="share-mail" value="ofCourse" type="radio" />Of
+          course</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>E-mail extras</legend>
+        <label
+          ><input name="extras" value="links" type="checkbox" />Links</label
+        >
+        <label>
+          <input
+            name="extras"
+            value="images"
+            type="checkbox"
+            class="input-checkbox"
+          />Images</label
+        >
+      </fieldset>
+      <p>What should be our e-mail header?</p>
+      <textarea
+        id="header"
+        name="header"
+        placeholder="Dear Mr. I'm-Too-Good-to-Call-or-Write-My-Fans..."
+      ></textarea>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
