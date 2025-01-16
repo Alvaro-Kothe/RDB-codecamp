@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Random Quote Machine</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container mt-5">
+  <div class="card bg-light p-4 shadow-sm" id="quote-box">
+    <p class="text-center fs-4 fw-bold">
+      <!-- Quote Text -->
+      <i class="fa fa-quote-left"></i><span id="text"></span><i class="fa fa-quote-right"></i>
+    </p>
+    <!-- Author -->
+    <span class="text-end text-muted">
+      - <span id="author"></span>
+    </span>
+    <!-- links and button -->
+    <div class="row align-items-center">
+      <!-- Twitter Link -->
+      <div class="col text-start">
+        <a href="#" id="tweet-quote" target="_blank" class="">
+          <i class="fa-brands fa-twitter twitter"></i>
+        </a>
+      </div>
+      <!-- Next Quote Button -->
+      <div class="col text-end">
+        <button class="btn btn-primary" id="new-quote">
+          New Quote
+        </button>
+      </div>
+    </div>
+  </div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
